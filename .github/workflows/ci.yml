@@ -1,0 +1,26 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 1 * *' # Monthly
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2.3.4
+      - name: Add MSBuild to PATH
+        uses: microsoft/setup-msbuild@v1.0.3
+      - name: Build
+        run: MSBuild.exe src/projects/projects.sln /p:Configuration=Release /p:Platform=Win32
+      - name: Deploy
+        uses: actions/upload-artifact@v2.2.4
+        with:
+          name: agmod-vs2019
+          path: |
+            src/cl_dll/Release/client.dll
+            src/dlls/Releasehl/ag.dll
