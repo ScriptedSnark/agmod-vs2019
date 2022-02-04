@@ -84,6 +84,7 @@
       <CompileAs>Default</CompileAs>
       <PrecompiledHeaderFile />
       <SDLCheck>false</SDLCheck>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
       <OutputFile>$(OutDir)ag.dll</OutputFile>
@@ -129,6 +130,7 @@
       <CompileAs>Default</CompileAs>
       <PrecompiledHeaderFile />
       <SDLCheck>false</SDLCheck>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
       <OutputFile>$(OutDir)ag.dll</OutputFile>

@@ -31,3 +31,9 @@
 # Visual Studio folder
 /src/projects/.vs
 /.vs
+
+# AG
+/src/cl_dll/Release
+/src/cl_dll/Debug
+/src/dlls/debughl
+/src/dlls/Release
