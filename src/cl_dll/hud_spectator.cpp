@@ -1209,7 +1209,7 @@ void CHudSpectator::DrawOverviewLayer()
 void CHudSpectator::DrawOverviewEntities()
 {
 	int				i,ir,ig,ib;
-	struct model_s *hSpriteModel;
+	struct model_s *HSPRITEModel;
 	vec3_t			origin, angles, point, forward, right, left, up, world, screen, offset;
 	float			x,y,z, r,g,b, sizeScale = 4.0f;
 	cl_entity_t *	ent;
@@ -1233,13 +1233,13 @@ void CHudSpectator::DrawOverviewEntities()
 	// draw all players
 	for (i=0 ; i < MAX_OVERVIEW_ENTITIES ; i++)
 	{
-		if ( !m_OverviewEntities[i].hSprite )
+		if ( !m_OverviewEntities[i].HSPRITE )
 			continue;
 
-		hSpriteModel = (struct model_s *)gEngfuncs.GetSpritePointer( m_OverviewEntities[i].hSprite );
+		HSPRITEModel = (struct model_s *)gEngfuncs.GetSpritePointer( m_OverviewEntities[i].HSPRITE );
 		ent = m_OverviewEntities[i].entity;
 		
-		gEngfuncs.pTriAPI->SpriteTexture( hSpriteModel, 0 );
+		gEngfuncs.pTriAPI->SpriteTexture( HSPRITEModel, 0 );
 		gEngfuncs.pTriAPI->RenderMode( kRenderTransTexture );
 
 		// see R_DrawSpriteModel
@@ -1288,8 +1288,8 @@ void CHudSpectator::DrawOverviewEntities()
 
 		gEngfuncs.pTriAPI->RenderMode( kRenderTransAdd );
 		
-		hSpriteModel = (struct model_s *)gEngfuncs.GetSpritePointer( m_hsprBeam );
-		gEngfuncs.pTriAPI->SpriteTexture( hSpriteModel, 0 );
+		HSPRITEModel = (struct model_s *)gEngfuncs.GetSpritePointer( m_hsprBeam );
+		gEngfuncs.pTriAPI->SpriteTexture( HSPRITEModel, 0 );
 		
 		gEngfuncs.pTriAPI->Color4f(r, g, b, 0.3);
 
@@ -1372,9 +1372,9 @@ void CHudSpectator::DrawOverviewEntities()
 
 	angles[0] = 0; // always show horizontal camera sprite
 
-	hSpriteModel = (struct model_s *)gEngfuncs.GetSpritePointer( m_hsprCamera );
+	HSPRITEModel = (struct model_s *)gEngfuncs.GetSpritePointer( m_hsprCamera );
 	gEngfuncs.pTriAPI->RenderMode( kRenderTransAdd );
-	gEngfuncs.pTriAPI->SpriteTexture( hSpriteModel, 0 );
+	gEngfuncs.pTriAPI->SpriteTexture( HSPRITEModel, 0 );
 	
 	
 	gEngfuncs.pTriAPI->Color4f( r, g, b, 1.0 );
@@ -1442,7 +1442,7 @@ void CHudSpectator::CheckOverviewEntities()
 
 bool CHudSpectator::AddOverviewEntity( int type, struct cl_entity_s *ent, const char *modelname)
 {
-	HSPRITE	hSprite = 0;
+	HSPRITE	HSPRITE = 0;
 	double  duration = -1.0f;	// duration -1 means show it only this frame;
 
 	if ( !ent )
@@ -1455,9 +1455,9 @@ bool CHudSpectator::AddOverviewEntity( int type, struct cl_entity_s *ent, const 
 			switch ( g_PlayerExtraInfo[ent->index].teamnumber )
 			{
 				// blue and red teams are swapped in CS and TFC
-				case 1 : hSprite = m_hsprPlayerBlue; break;
-				case 2 : hSprite = m_hsprPlayerRed; break;
-				default : hSprite = m_hsprPlayer; break;
+				case 1 : HSPRITE = m_hsprPlayerBlue; break;
+				case 2 : HSPRITE = m_hsprPlayerRed; break;
+				default : HSPRITE = m_hsprPlayer; break;
 			}
 		}
 		else
@@ -1470,7 +1470,7 @@ bool CHudSpectator::AddOverviewEntity( int type, struct cl_entity_s *ent, const 
 	else
 		return false;	
 
-	return AddOverviewEntityToList(hSprite, ent, gEngfuncs.GetClientTime() + duration );
+	return AddOverviewEntityToList(HSPRITE, ent, gEngfuncs.GetClientTime() + duration );
 }
 
 void CHudSpectator::DeathMessage(int victim)
@@ -1490,7 +1490,7 @@ bool CHudSpectator::AddOverviewEntityToList(HSPRITE sprite, cl_entity_t *ent, do
 		if ( m_OverviewEntities[i].entity == NULL)
 		{
 			m_OverviewEntities[i].entity = ent;
-			m_OverviewEntities[i].hSprite = sprite;
+			m_OverviewEntities[i].HSPRITE = sprite;
 			m_OverviewEntities[i].killTime = killTime;
 			return true;
 		}

@@ -87,7 +87,7 @@ void CHudHealth::Reset( void )
 
 int CHudHealth::VidInit(void)
 {
-	m_hSprite = 0;
+	m_HSPRITE = 0;
 
 	m_HUD_dmg_bio = gHUD.GetSpriteIndex( "dmg_bio" ) + 1;
 	m_HUD_cross = gHUD.GetSpriteIndex( "cross" );
@@ -176,8 +176,8 @@ int CHudHealth::Draw(float flTime)
 	if ( (gHUD.m_iHideHUDDisplay & HIDEHUD_HEALTH) || gEngfuncs.IsSpectateOnly() )
 		return 1;
   
-	if ( !m_hSprite )
-		m_hSprite = LoadSprite(PAIN_NAME);
+	if ( !m_HSPRITE )
+		m_HSPRITE = LoadSprite(PAIN_NAME);
 	
 	// Has health changed? Flash the health #
 	if (m_fFade)
@@ -313,10 +313,10 @@ int CHudHealth::DrawPain(float flTime)
 		GetPainColor(r,g,b);
 		shade = a * max( m_fAttackFront, 0.5 );
 		ScaleColors(r, g, b, shade);
-		SPR_Set(m_hSprite, r, g, b );
+		SPR_Set(m_HSPRITE, r, g, b );
 
-		x = ScreenWidth/2 - SPR_Width(m_hSprite, 0)/2;
-		y = ScreenHeight/2 - SPR_Height(m_hSprite,0) * 3;
+		x = ScreenWidth/2 - SPR_Width(m_HSPRITE, 0)/2;
+		y = ScreenHeight/2 - SPR_Height(m_HSPRITE,0) * 3;
 		SPR_DrawAdditive(0, x, y, NULL);
 		m_fAttackFront = max( 0, m_fAttackFront - fFade );
 	} else
@@ -327,10 +327,10 @@ int CHudHealth::DrawPain(float flTime)
 		GetPainColor(r,g,b);
 		shade = a * max( m_fAttackRight, 0.5 );
 		ScaleColors(r, g, b, shade);
-		SPR_Set(m_hSprite, r, g, b );
+		SPR_Set(m_HSPRITE, r, g, b );
 
-		x = ScreenWidth/2 + SPR_Width(m_hSprite, 1) * 2;
-		y = ScreenHeight/2 - SPR_Height(m_hSprite,1)/2;
+		x = ScreenWidth/2 + SPR_Width(m_HSPRITE, 1) * 2;
+		y = ScreenHeight/2 - SPR_Height(m_HSPRITE,1)/2;
 		SPR_DrawAdditive(1, x, y, NULL);
 		m_fAttackRight = max( 0, m_fAttackRight - fFade );
 	} else
@@ -341,10 +341,10 @@ int CHudHealth::DrawPain(float flTime)
 		GetPainColor(r,g,b);
 		shade = a * max( m_fAttackRear, 0.5 );
 		ScaleColors(r, g, b, shade);
-		SPR_Set(m_hSprite, r, g, b );
+		SPR_Set(m_HSPRITE, r, g, b );
 
-		x = ScreenWidth/2 - SPR_Width(m_hSprite, 2)/2;
-		y = ScreenHeight/2 + SPR_Height(m_hSprite,2) * 2;
+		x = ScreenWidth/2 - SPR_Width(m_HSPRITE, 2)/2;
+		y = ScreenHeight/2 + SPR_Height(m_HSPRITE,2) * 2;
 		SPR_DrawAdditive(2, x, y, NULL);
 		m_fAttackRear = max( 0, m_fAttackRear - fFade );
 	} else
@@ -355,10 +355,10 @@ int CHudHealth::DrawPain(float flTime)
 		GetPainColor(r,g,b);
 		shade = a * max( m_fAttackLeft, 0.5 );
 		ScaleColors(r, g, b, shade);
-		SPR_Set(m_hSprite, r, g, b );
+		SPR_Set(m_HSPRITE, r, g, b );
 
-		x = ScreenWidth/2 - SPR_Width(m_hSprite, 3) * 3;
-		y = ScreenHeight/2 - SPR_Height(m_hSprite,3)/2;
+		x = ScreenWidth/2 - SPR_Width(m_HSPRITE, 3) * 3;
+		y = ScreenHeight/2 - SPR_Height(m_HSPRITE,3)/2;
 		SPR_DrawAdditive(3, x, y, NULL);
 
 		m_fAttackLeft = max( 0, m_fAttackLeft - fFade );
@@ -381,6 +381,7 @@ int CHudHealth::DrawDamage(float flTime)
 	a = (int)( fabs(sin(flTime*2)) * 256.0);
 
 	ScaleColors(r, g, b, a);
+	int i;
 
 	// Draw all the items
 	for (int i = 0; i < NUM_DMG_TYPES; i++)

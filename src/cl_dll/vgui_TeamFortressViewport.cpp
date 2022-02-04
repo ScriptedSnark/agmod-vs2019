@@ -644,6 +644,7 @@ void TeamFortressViewport::Initialize( void )
 
 	strcpy(m_sMapName, "");
 	strcpy(m_szServerName, "");
+	int i;
 	for (int i = 0; i < 5; i++)
 	{
 		m_iValidClasses[i] = 0;
@@ -2582,8 +2583,9 @@ int TeamFortressViewport::MsgFunc_TeamScore( const char *pszName, int iSize, voi
 	BEGIN_READ( pbuf, iSize );
 	char *TeamName = READ_STRING();
 
+	int i;
 	// find the team matching the name
-	for ( int i = 1; i <= m_pScoreBoard->m_iNumTeams; i++ )
+	for ( i = 1; i <= m_pScoreBoard->m_iNumTeams; i++ )
 	{
 		if ( !stricmp( TeamName, g_TeamInfo[i].name ) )
 			break;

@@ -21,7 +21,9 @@
 #define NOSERVICE
 #define NOMCX
 #define NOIME
-#include <windows.h>
+#include "winsani_in.h"
+#include "windows.h"
+#include "winsani_out.h"
 #include <stdio.h>
 
 #if _MSC_VER < 1300

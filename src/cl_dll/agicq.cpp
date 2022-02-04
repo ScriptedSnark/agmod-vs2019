@@ -1,6 +1,8 @@
 //++ BulliT
 #include "agmapi.h"
-#include <windows.h>
+#include "winsani_in.h"
+#include "windows.h"
+#include "winsani_out.h"
 
 typedef BOOL   (WINAPI* ICQAPICall_SetLicenseKey)(char*, char*, char*);
 typedef BOOL   (WINAPI* ICQAPICall_SendMessage)(int, char*);

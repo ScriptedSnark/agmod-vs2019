@@ -1,0 +1,643 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{d5851eed-d430-4957-8f79-71cb61c76f6b}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat;for;f90</Extensions>
+    </Filter>
+    <Filter Include="Source Files\hl">
+      <UniqueIdentifier>{5856f75a-d6a5-42a1-8b5a-342e84683726}</UniqueIdentifier>
+      <Extensions>*.CPP</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{61fe7e55-f5ed-425e-bdb7-9973b3cc3842}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;fi;fd</Extensions>
+    </Filter>
+    <Filter Include="AG Files">
+      <UniqueIdentifier>{f3cb6a28-cb5b-45a0-a943-3f6356df43de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{c4a315e3-d084-40c4-bab3-2bb255fc2455}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;cnt;rtf;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ammo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ammo_secondary.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ammohistory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="battery.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cdll_int.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="com_weapons.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="death.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="demo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="entity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ev_common.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="events.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="flashlight.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameStudioModelRenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="geiger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="health.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hud.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hud_msg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hud_redraw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hud_servers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hud_spectator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hud_update.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="in_camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="input.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="inputw32.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="menu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="message.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="overview.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="parsemsg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pm_shared\pm_debug.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pm_shared\pm_math.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pm_shared\pm_shared.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="saytext.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="status_icons.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="statusbar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="studio_util.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StudioModelRenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="text_message.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="train.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tri.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="util.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\game_shared\vgui_checkbutton2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vgui_ClassMenu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vgui_ConsolePanel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vgui_ControlConfigPanel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vgui_CustomObjects.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\game_shared\vgui_grid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\game_shared\vgui_helpers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vgui_int.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\game_shared\vgui_listbox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\game_shared\vgui_loadtga.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vgui_MOTDWindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vgui_SchemeManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vgui_ScorePanel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vgui_ServerBrowser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vgui_SpectatorPanel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vgui_TeamFortressViewport.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vgui_teammenu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="view.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlls\crossbow.cpp">
+      <Filter>Source Files\hl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlls\crowbar.cpp">
+      <Filter>Source Files\hl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlls\egon.cpp">
+      <Filter>Source Files\hl</Filter>
+    </ClCompile>
+    <ClCompile Include="ev_hldm.cpp">
+      <Filter>Source Files\hl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlls\gauss.cpp">
+      <Filter>Source Files\hl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlls\handgrenade.cpp">
+      <Filter>Source Files\hl</Filter>
+    </ClCompile>
+    <ClCompile Include="hl\hl_baseentity.cpp">
+      <Filter>Source Files\hl</Filter>
+    </ClCompile>
+    <ClCompile Include="hl\hl_events.cpp">
+      <Filter>Source Files\hl</Filter>
+    </ClCompile>
+    <ClCompile Include="hl\hl_objects.cpp">
+      <Filter>Source Files\hl</Filter>
+    </ClCompile>
+    <ClCompile Include="hl\hl_weapons.cpp">
+      <Filter>Source Files\hl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlls\wpn_shared\hl_wpn_glock.cpp">
+      <Filter>Source Files\hl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlls\hornetgun.cpp">
+      <Filter>Source Files\hl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\interface.cpp">
+      <Filter>Source Files\hl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlls\mp5.cpp">
+      <Filter>Source Files\hl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlls\python.cpp">
+      <Filter>Source Files\hl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlls\rpg.cpp">
+      <Filter>Source Files\hl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlls\satchel.cpp">
+      <Filter>Source Files\hl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlls\shotgun.cpp">
+      <Filter>Source Files\hl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlls\squeakgrenade.cpp">
+      <Filter>Source Files\hl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlls\tripmine.cpp">
+      <Filter>Source Files\hl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\game_shared\vgui_scrollbar2.cpp">
+      <Filter>Source Files\hl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\game_shared\vgui_slider2.cpp">
+      <Filter>Source Files\hl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\game_shared\voice_banmgr.cpp">
+      <Filter>Source Files\hl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\game_shared\voice_status.cpp">
+      <Filter>Source Files\hl</Filter>
+    </ClCompile>
+    <ClCompile Include="agbase64.cpp">
+      <Filter>AG Files</Filter>
+    </ClCompile>
+    <ClCompile Include="agcrc32.cpp">
+      <Filter>AG Files</Filter>
+    </ClCompile>
+    <ClCompile Include="agcrc32enforcer.cpp">
+      <Filter>AG Files</Filter>
+    </ClCompile>
+    <ClCompile Include="agdownload.cpp">
+      <Filter>AG Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Agglobal.cpp">
+      <Filter>AG Files</Filter>
+    </ClCompile>
+    <ClCompile Include="aghudcountdown.cpp">
+      <Filter>AG Files</Filter>
+    </ClCompile>
+    <ClCompile Include="aghudctf.cpp">
+      <Filter>AG Files</Filter>
+    </ClCompile>
+    <ClCompile Include="aghudcustomtimer.cpp">
+      <Filter>AG Files</Filter>
+    </ClCompile>
+    <ClCompile Include="aghudglobal.cpp">
+      <Filter>AG Files</Filter>
+    </ClCompile>
+    <ClCompile Include="aghudirc.cpp">
+      <Filter>AG Files</Filter>
+    </ClCompile>
+    <ClCompile Include="aghudlocation.cpp">
+      <Filter>AG Files</Filter>
+    </ClCompile>
+    <ClCompile Include="aghudlongjump.cpp">
+      <Filter>AG Files</Filter>
+    </ClCompile>
+    <ClCompile Include="aghudnextmap.cpp">
+      <Filter>AG Files</Filter>
+    </ClCompile>
+    <ClCompile Include="aghudplayerid.cpp">
+      <Filter>AG Files</Filter>
+    </ClCompile>
+    <ClCompile Include="aghudscoreboard.cpp">
+      <Filter>AG Files</Filter>
+    </ClCompile>
+    <ClCompile Include="aghudsettings.cpp">
+      <Filter>AG Files</Filter>
+    </ClCompile>
+    <ClCompile Include="aghudsplash.cpp">
+      <Filter>AG Files</Filter>
+    </ClCompile>
+    <ClCompile Include="aghudsuddendeath.cpp">
+      <Filter>AG Files</Filter>
+    </ClCompile>
+    <ClCompile Include="aghudtimeout.cpp">
+      <Filter>AG Files</Filter>
+    </ClCompile>
+    <ClCompile Include="aghudtimer.cpp">
+      <Filter>AG Files</Filter>
+    </ClCompile>
+    <ClCompile Include="aghudvote.cpp">
+      <Filter>AG Files</Filter>
+    </ClCompile>
+    <ClCompile Include="agicq.cpp">
+      <Filter>AG Files</Filter>
+    </ClCompile>
+    <ClCompile Include="agirc.cpp">
+      <Filter>AG Files</Filter>
+    </ClCompile>
+    <ClCompile Include="aglocation.cpp">
+      <Filter>AG Files</Filter>
+    </ClCompile>
+    <ClCompile Include="agmapi.cpp">
+      <Filter>AG Files</Filter>
+    </ClCompile>
+    <ClCompile Include="agmatchreport.cpp">
+      <Filter>AG Files</Filter>
+    </ClCompile>
+    <ClCompile Include="agminidump.cpp">
+      <Filter>AG Files</Filter>
+    </ClCompile>
+    <ClCompile Include="agmodel.cpp">
+      <Filter>AG Files</Filter>
+    </ClCompile>
+    <ClCompile Include="agmodelcheck.cpp">
+      <Filter>AG Files</Filter>
+    </ClCompile>
+    <ClCompile Include="agpak.cpp">
+      <Filter>AG Files</Filter>
+    </ClCompile>
+    <ClCompile Include="agvariablechecker.cpp">
+      <Filter>AG Files</Filter>
+    </ClCompile>
+    <ClCompile Include="agversioninfo.cpp">
+      <Filter>AG Files</Filter>
+    </ClCompile>
+    <ClCompile Include="agvguiirc.cpp">
+      <Filter>AG Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AgVGuiMapBrowser.cpp">
+      <Filter>AG Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AgVGUIPassword.cpp">
+      <Filter>AG Files</Filter>
+    </ClCompile>
+    <ClCompile Include="agvguiwinamp.cpp">
+      <Filter>AG Files</Filter>
+    </ClCompile>
+    <ClCompile Include="agwallhack.cpp">
+      <Filter>AG Files</Filter>
+    </ClCompile>
+    <ClCompile Include="crossthreadsmessagingdevice.cpp">
+      <Filter>AG Files</Filter>
+    </ClCompile>
+    <ClCompile Include="irc.cpp">
+      <Filter>AG Files</Filter>
+    </ClCompile>
+    <ClCompile Include="socket.cpp">
+      <Filter>AG Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="parsemsg.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ammo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ammohistory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cl_dll.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="com_weapons.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="demo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ev_hldm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="eventscripts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameStudioModelRenderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="health.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hud.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hud_iface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hud_servers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hud_servers_priv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hud_spectator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="in_defs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\itrackeruser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="kbutton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="overview.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\pm_shared\pm_debug.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\pm_shared\pm_defs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\pm_shared\pm_info.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\pm_shared\pm_materials.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\pm_shared\pm_movevars.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\pm_shared\pm_shared.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="studio_util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StudioModelRenderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="util_vector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vgui_ConsolePanel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vgui_ControlConfigPanel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vgui_int.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vgui_SchemeManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vgui_ScorePanel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vgui_ServerBrowser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vgui_SpectatorPanel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vgui_TeamFortressViewport.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="view.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\game_shared\voice_banmgr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\game_shared\voice_status.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\game_shared\voice_vgui_tweakdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wrect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="agbase64.h">
+      <Filter>AG Files</Filter>
+    </ClInclude>
+    <ClInclude Include="agcrc32.h">
+      <Filter>AG Files</Filter>
+    </ClInclude>
+    <ClInclude Include="agcrc32enforcer.h">
+      <Filter>AG Files</Filter>
+    </ClInclude>
+    <ClInclude Include="agdownload.h">
+      <Filter>AG Files</Filter>
+    </ClInclude>
+    <ClInclude Include="agglobal.h">
+      <Filter>AG Files</Filter>
+    </ClInclude>
+    <ClInclude Include="aghudcountdown.h">
+      <Filter>AG Files</Filter>
+    </ClInclude>
+    <ClInclude Include="aghudctf.h">
+      <Filter>AG Files</Filter>
+    </ClInclude>
+    <ClInclude Include="aghudcustomtimer.h">
+      <Filter>AG Files</Filter>
+    </ClInclude>
+    <ClInclude Include="aghudglobal.h">
+      <Filter>AG Files</Filter>
+    </ClInclude>
+    <ClInclude Include="aghudirc.h">
+      <Filter>AG Files</Filter>
+    </ClInclude>
+    <ClInclude Include="aghudlocation.h">
+      <Filter>AG Files</Filter>
+    </ClInclude>
+    <ClInclude Include="aghudlongjump.h">
+      <Filter>AG Files</Filter>
+    </ClInclude>
+    <ClInclude Include="aghudnextmap.h">
+      <Filter>AG Files</Filter>
+    </ClInclude>
+    <ClInclude Include="aghudplayerid.h">
+      <Filter>AG Files</Filter>
+    </ClInclude>
+    <ClInclude Include="aghudscoreboard.h">
+      <Filter>AG Files</Filter>
+    </ClInclude>
+    <ClInclude Include="aghudsettings.h">
+      <Filter>AG Files</Filter>
+    </ClInclude>
+    <ClInclude Include="aghudsplash.h">
+      <Filter>AG Files</Filter>
+    </ClInclude>
+    <ClInclude Include="aghudsuddendeath.h">
+      <Filter>AG Files</Filter>
+    </ClInclude>
+    <ClInclude Include="aghudtimeout.h">
+      <Filter>AG Files</Filter>
+    </ClInclude>
+    <ClInclude Include="aghudtimer.h">
+      <Filter>AG Files</Filter>
+    </ClInclude>
+    <ClInclude Include="aghudvote.h">
+      <Filter>AG Files</Filter>
+    </ClInclude>
+    <ClInclude Include="agicq.h">
+      <Filter>AG Files</Filter>
+    </ClInclude>
+    <ClInclude Include="agirc.h">
+      <Filter>AG Files</Filter>
+    </ClInclude>
+    <ClInclude Include="aglocation.h">
+      <Filter>AG Files</Filter>
+    </ClInclude>
+    <ClInclude Include="agmapi.h">
+      <Filter>AG Files</Filter>
+    </ClInclude>
+    <ClInclude Include="agmatchreport.h">
+      <Filter>AG Files</Filter>
+    </ClInclude>
+    <ClInclude Include="agmodel.h">
+      <Filter>AG Files</Filter>
+    </ClInclude>
+    <ClInclude Include="agmodelcheck.h">
+      <Filter>AG Files</Filter>
+    </ClInclude>
+    <ClInclude Include="agpak.h">
+      <Filter>AG Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AgUDPClient.h">
+      <Filter>AG Files</Filter>
+    </ClInclude>
+    <ClInclude Include="agvariablechecker.h">
+      <Filter>AG Files</Filter>
+    </ClInclude>
+    <ClInclude Include="agversioninfo.h">
+      <Filter>AG Files</Filter>
+    </ClInclude>
+    <ClInclude Include="agvguiirc.h">
+      <Filter>AG Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AgVGuiMapBrowser.h">
+      <Filter>AG Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AgVGUIPassword.h">
+      <Filter>AG Files</Filter>
+    </ClInclude>
+    <ClInclude Include="agvguiwinamp.h">
+      <Filter>AG Files</Filter>
+    </ClInclude>
+    <ClInclude Include="agwallhack.h">
+      <Filter>AG Files</Filter>
+    </ClInclude>
+    <ClInclude Include="crossthreadsmessagingdevice.h">
+      <Filter>AG Files</Filter>
+    </ClInclude>
+    <ClInclude Include="irc.h">
+      <Filter>AG Files</Filter>
+    </ClInclude>
+    <ClInclude Include="socket.h">
+      <Filter>AG Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

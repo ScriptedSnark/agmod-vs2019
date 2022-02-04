@@ -23,7 +23,7 @@ int AgHudSplash::Init(void)
 
 int AgHudSplash::VidInit(void)
 {
-  m_hSprite = SPR_Load("sprites/ag_splash.spr");
+  m_HSPRITE = SPR_Load("sprites/ag_splash.spr");
 	return 1;
 }
 
@@ -36,7 +36,7 @@ void AgHudSplash::Reset(void)
 
 int AgHudSplash::Draw(float fTime)
 {
-  if (m_flTurnoff < gHUD.m_flTime || 0 == m_hSprite)
+  if (m_flTurnoff < gHUD.m_flTime || 0 == m_HSPRITE)
   {
     Reset();
     return 1;
@@ -46,10 +46,10 @@ int AgHudSplash::Draw(float fTime)
 
 	UnpackRGB(r,g,b, RGB_WHITEISH);
   ScaleColors(r, g, b, 255);	
-	SPR_Set(m_hSprite, r, g, b );
+	SPR_Set(m_HSPRITE, r, g, b );
 	// This should show up to the top right corner
-	y = SPR_Height(m_hSprite,0);
-	x = ScreenWidth - SPR_Width(m_hSprite,0);
+	y = SPR_Height(m_HSPRITE,0);
+	x = ScreenWidth - SPR_Width(m_HSPRITE,0);
 	SPR_DrawHoles( 0,  x, y, NULL);
 
 	return 0;

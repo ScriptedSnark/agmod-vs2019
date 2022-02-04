@@ -199,7 +199,7 @@ public:
 	int MsgFunc_Train(const char *pszName, int iSize, void *pbuf);
 
 private:
-	HSPRITE m_hSprite;
+	HSPRITE m_HSPRITE;
 	int m_iPos;
 
 };
@@ -397,8 +397,8 @@ public:
 	int MsgFunc_Battery(const char *pszName,  int iSize, void *pbuf );
 	
 private:
-	HSPRITE m_hSprite1;
-	HSPRITE m_hSprite2;
+	HSPRITE m_HSPRITE1;
+	HSPRITE m_HSPRITE2;
 	wrect_t *m_prc1;
 	wrect_t *m_prc2;
 	int	  m_iBat;	
@@ -421,8 +421,8 @@ public:
 	int MsgFunc_FlashBat(const char *pszName,  int iSize, void *pbuf );
 	
 private:
-	HSPRITE m_hSprite1;
-	HSPRITE m_hSprite2;
+	HSPRITE m_HSPRITE1;
+	HSPRITE m_HSPRITE2;
 	HSPRITE m_hBeam;
 	wrect_t *m_prc1;
 	wrect_t *m_prc2;
@@ -606,7 +606,7 @@ public:
 private:
 	// the memory for these arrays are allocated in the first call to CHud::VidInit(), when the hud.txt and associated sprites are loaded.
 	// freed in ~CHud()
-	HSPRITE *m_rghSprites;	/*[HUD_SPRITE_COUNT]*/			// the sprites loaded from hud.txt
+	HSPRITE *m_rgHSPRITEs;	/*[HUD_SPRITE_COUNT]*/			// the sprites loaded from hud.txt
 	wrect_t *m_rgrcRects;	/*[HUD_SPRITE_COUNT]*/
 	char *m_rgszSpriteNames; /*[HUD_SPRITE_COUNT][MAX_SPRITE_NAME_LENGTH]*/
 
@@ -614,7 +614,7 @@ private:
 public:
 	HSPRITE GetSprite( int index ) 
 	{
-		return (index < 0) ? 0 : m_rghSprites[index];
+		return (index < 0) ? 0 : m_rgHSPRITEs[index];
 	}
 
 	wrect_t& GetSpriteRect( int index )
@@ -623,7 +623,7 @@ public:
 	}
 
 	
-	int GetSpriteIndex( const char *SpriteName );	// gets a sprite index, for use in the m_rghSprites[] array
+	int GetSpriteIndex( const char *SpriteName );	// gets a sprite index, for use in the m_rgHSPRITEs[] array
 
 	CHudAmmo		m_Ammo;
 	CHudHealth		m_Health;

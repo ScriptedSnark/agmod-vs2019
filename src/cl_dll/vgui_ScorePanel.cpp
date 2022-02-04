@@ -303,6 +303,7 @@ void ScorePanel::Update()
 //-----------------------------------------------------------------------------
 void ScorePanel::SortTeams()
 {
+	int i;
 	// clear out team scores
 	for ( int i = 1; i <= m_iNumTeams; i++ )
 	{
@@ -310,7 +311,7 @@ void ScorePanel::SortTeams()
 			g_TeamInfo[i].frags = g_TeamInfo[i].deaths = 0;
 		g_TeamInfo[i].ping = g_TeamInfo[i].packetloss = 0;
 	}
-
+	int j;
 	// recalc the team scores, then draw them
 	for ( i = 1; i < MAX_PLAYERS; i++ )
 	{
@@ -321,7 +322,7 @@ void ScorePanel::SortTeams()
 			continue; // skip over players who are not in a team
 
 		// find what team this player is in
-		for ( int j = 1; j <= m_iNumTeams; j++ )
+		for ( j = 1; j <= m_iNumTeams; j++ )
 		{
 			if ( !stricmp( g_PlayerExtraInfo[i].teamname, g_TeamInfo[j].name ) )
 				break;
@@ -462,6 +463,7 @@ void ScorePanel::SortPlayers( int iTeam, char *team )
 //-----------------------------------------------------------------------------
 void ScorePanel::RebuildTeams()
 {
+	int i, j;
 	// clear out player counts from teams
 	for ( int i = 1; i <= m_iNumTeams; i++ )
 	{
@@ -480,7 +482,7 @@ void ScorePanel::RebuildTeams()
 			continue; // skip over players who are not in a team
 
 		// is this player in an existing team?
-		for ( int j = 1; j <= m_iNumTeams; j++ )
+		for ( j = 1; j <= m_iNumTeams; j++ )
 		{
 			if ( g_TeamInfo[j].name[0] == '\0' )
 				break;
@@ -844,7 +846,8 @@ void ScorePanel::FillGrid()
 		}
 	}
 
-	for(row=0; row < NUM_ROWS; row++)
+	int row;
+	for(row = 0; row < NUM_ROWS; row++)
 	{
 		CGrid *pGridRow = &m_PlayerGrids[row];
 

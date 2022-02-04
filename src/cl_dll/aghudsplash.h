@@ -15,7 +15,7 @@ public:
 
 private:
   float m_flTurnoff;
-	HSPRITE m_hSprite;
+	HSPRITE m_HSPRITE;
 };
 
 #endif //_AG_SPLASH_HUD_

@@ -317,13 +317,13 @@ bool AgCommand::HandleCommand(CBasePlayer* pPlayer)
 
 
     if (0 < CMD_ARGC() && 
-        (0 == strnicmp(CMD_ARGV(0),"ag_spectalk",11) 
-       ||0 == strnicmp(CMD_ARGV(0),"mp_timelimit",12)
-       ||0 == strnicmp(CMD_ARGV(0),"ag_gauss_fix",12)  
-       ||0 == strnicmp(CMD_ARGV(0),"ag_rpg_fix",10) 
-       ||0 == strnicmp(CMD_ARGV(0),"mp_fraglimit",12)
-       ||0 == strnicmp(CMD_ARGV(0),"mp_friendlyfire",15)
-       ||0 == strnicmp(CMD_ARGV(0),"mp_weaponstay",13)
+        (0 == _strnicmp(CMD_ARGV(0),"ag_spectalk",11) 
+       ||0 == _strnicmp(CMD_ARGV(0),"mp_timelimit",12)
+       ||0 == _strnicmp(CMD_ARGV(0),"ag_gauss_fix",12)  
+       ||0 == _strnicmp(CMD_ARGV(0),"ag_rpg_fix",10) 
+       ||0 == _strnicmp(CMD_ARGV(0),"mp_fraglimit",12)
+       ||0 == _strnicmp(CMD_ARGV(0),"mp_friendlyfire",15)
+       ||0 == _strnicmp(CMD_ARGV(0),"mp_weaponstay",13)
        ))
     {
       if (1 == CMD_ARGC())

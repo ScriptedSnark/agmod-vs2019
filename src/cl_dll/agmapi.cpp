@@ -1,7 +1,9 @@
 //++ BulliT
 #include "agmapi.h"
 #undef EXPORT
-#include <windows.h>
+#include "winsani_in.h"
+#include "windows.h"
+#include "winsani_out.h"
 #include <mapi.h>
 
 bool AgSendMail(const char* pszMessage)

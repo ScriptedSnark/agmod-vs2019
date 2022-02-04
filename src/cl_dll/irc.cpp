@@ -457,8 +457,9 @@ void CIrcIdentServer::DoThread()
 			continue;
 		szBuf[cbRead] = '\0';
 
+		char* p;
 		// strip CRLF from query
-		for(char* p = szBuf; *p && *p != '\r' && *p != '\n'; ++p)
+		for(p = szBuf; *p && *p != '\r' && *p != '\n'; ++p)
 			;
 		*p = '\0';
 
