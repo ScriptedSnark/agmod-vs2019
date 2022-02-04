@@ -29,4 +29,5 @@
 *.app
 
 # Visual Studio folder
+/src/projects/.vs
 /.vs
