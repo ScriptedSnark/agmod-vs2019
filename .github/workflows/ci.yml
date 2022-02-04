@@ -16,7 +16,7 @@ jobs:
       - name: Add MSBuild to PATH
         uses: microsoft/setup-msbuild@v1.0.3
       - name: Build
-        run: MSBuild.exe src/projects/projects.sln /p:Configuration=Release /p:Platform=Win32
+        run: MSBuild.exe src/projects/projects.sln /p:Configuration=Release
       - name: Deploy
         uses: actions/upload-artifact@v2.2.4
         with:
